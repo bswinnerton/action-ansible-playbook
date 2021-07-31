@@ -79,8 +79,6 @@ async function main() {
             cmd.unshift("sudo", "-E", "env", `PATH=${process.env.PATH}`)
         }
 
-        process.env.ANSIBLE_FORCE_COLOR = "True"
-
         let output = ""
         await exec.exec(cmd.join(' '), null, {
           listeners: {
