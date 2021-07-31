@@ -31,6 +31,9 @@ inputs:
   sudo:
     description: Set to "true" if root is required for running your playbook
     required: false
+  force_color:
+    description: Set to "false" if ANSIBLE_FORCE_COLOR should be turned off
+    required: false
 outputs:
   output:
     description: The captured output of both stdout and stderr from the Ansible Playbook run
