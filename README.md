@@ -35,4 +35,6 @@ Should work on any OS, if `ansible-playbook` command is available in `PATH`.
       --limit group1
       --extra-vars hello=there
       --verbose
+    # Optional, whether or not to force colors in output, defaults to true
+    force_color: false
 ```
